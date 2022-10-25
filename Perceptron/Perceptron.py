@@ -59,7 +59,7 @@ def predict(updated_weights, X_train, y_train, X_test, y_test):
     count_true_test = np.sum(predicted_labels_test == y_test)
     accuracy_test = count_true_test/(y_test.shape[0])
     
-
+ 
     predicted_labels_train = result_train.argmax(axis=1)
     count_true_train = np.sum(predicted_labels_train == y_train)
     accuracy_train = count_true_train/(y_train.shape[0])
